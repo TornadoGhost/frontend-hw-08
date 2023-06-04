@@ -1,0 +1,14 @@
+//utils
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/variables";
+
+//base
+@import "./base/normalize.css";
+@import "./base/base";
+
+//components
+@import "./components/header/main";
+@import "./components/footer/main";
+@import "./components/index/main/main";
+@import "./components/portfolio.scss/main/main";
