@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Document</title>
+    <title>Studia</title>
   </head>
   <body>
     <header class="header">
@@ -14,61 +14,66 @@
           <span class="logo__partname">Web</span>
           Studio
         </a>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a
-                class="header__nav-link active-tab"
-                id="home-tab"
-                href="./index.html"
-                >Студія</a
-              >
+        <button type="button"></button>
+        <div class="header__wrap">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a
+                  class="header__nav-link active-tab"
+                  id="home-tab"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a
+                  class="header__nav-link"
+                  id="portfolio-tab"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a
+                  class="header__nav-link"
+                  id="contacts-tab"
+                  href="./contacts.html"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__contacts">
+            <li class="header__contacts-item">
+              <a class="header__contacts-link" href="mailto:info@devstudio.com">
+                <svg class="header__icon-envelope">
+                  <use href="./images/svg/symbol-defs.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header__nav-item">
-              <a
-                class="header__nav-link"
-                id="portfolio-tab"
-                href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="header__nav-item">
-              <a
-                class="header__nav-link"
-                id="contacts-tab"
-                href="./contacts.html"
-                >Контакти</a
-              >
+            <li class="header__contacts-item">
+              <a class="header__contacts-link" href="tel:+380961111111">
+                <svg class="header__icon-smartphone">
+                  <use href="./images/svg/symbol-defs.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="header__contacts">
-          <li class="header__contacts-item">
-            <a class="header__contacts-link" href="mailto:info@devstudio.com">
-              <svg class="header__icon-envelope">
-                <use href="./images/svg/symbol-defs.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header__contacts-item">
-            <a class="header__contacts-link" href="tel:+380961111111">
-              <svg class="header__icon-smartphone">
-                <use href="./images/svg/symbol-defs.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main class="main">
       <section class="hero">
-        <div class="hero__background">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__button button" type="button" data-modal-open>
-            Замовити послугу
-          </button>
+        <div class="container">
+          <div class="hero__background">
+            <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+            <button class="hero__button button" type="button" data-modal-open>
+              Замовити послугу
+            </button>
+          </div>
         </div>
       </section>
       <section class="features">

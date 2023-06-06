@@ -4,11 +4,12 @@
 @import "./utils/variables";
 
 //base
-@import "./base/normalize.css";
+@import "./base/normalize";
 @import "./base/base";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
 
 //components
-@import "./components/header/main";
-@import "./components/footer/main";
-@import "./components/index/main/main";
-@import "./components/portfolio.scss/main/main";
+@import "./components/global/logo";
+@import "./components/global/container";
+
+@import "./components/global/header";
