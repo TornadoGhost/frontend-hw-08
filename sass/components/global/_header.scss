@@ -1,0 +1,20 @@
+.header {
+    &__container {
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+    
+    
+    &__button {
+        border: none;
+        background-color: $main-bg-color;
+    }
+
+    &__button-icon {
+        background-color: red;
+    }
+
+    &__button-icon-close {
+    }
+}
