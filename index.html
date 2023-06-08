@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Studia</title>
+    <title>Studio</title>
   </head>
   <body>
     <header class="header">
@@ -16,13 +16,17 @@
         </a>
         <button class="header__button" type="button">
           <svg class="header__button-icon" width="40" height="40">
-            <!-- <use
+            <use
               class="header__button-icon-menu"
               href="./images/svg/symbol-defs.svg#menu_24px"
-            ></use> -->
+              width="24px"
+              height="16px"
+            ></use>
             <use
-              class="header__button-icon-close"
+              class="header__button-icon-close is-hidden"
               href="./images/svg/symbol-defs.svg#close_24px"
+              width="16px"
+              height="16px"
             ></use>
           </svg>
         </button>
@@ -78,7 +82,7 @@
     </header>
     <main class="main">
       <section class="hero">
-        <div class="container">
+        <div class="hero__container container">
           <div class="hero__background">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
             <button class="hero__button button" type="button" data-modal-open>
@@ -90,7 +94,7 @@
       <section class="features">
         <div class="features__container container">
           <h2 class="features__page-title">Особливості</h2>
-          <ul class="features__list list">
+          <ul class="features__list">
             <li class="features__item">
               <div class="features__img-background">
                 <svg class="features__icon">
@@ -556,14 +560,14 @@
           <form class="footer__form" action="#">
             <label class="footer__label">
               <input class="footer__input-email" type="email" />
-              <button class="footer__button-submit button" type="submit">
-                Підписатись
-                <svg class="footer__button-icon">
-                  <use href="./images/svg/symbol-defs.svg#iconsend"></use>
-                </svg>
-              </button>
               <span class="footer__label-name">E-mail</span>
             </label>
+            <button class="footer__button-submit button" type="submit">
+              Підписатись
+              <svg class="footer__button-icon">
+                <use href="./images/svg/symbol-defs.svg#iconsend"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>

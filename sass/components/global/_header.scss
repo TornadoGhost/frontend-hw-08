@@ -1,4 +1,6 @@
 .header {
+    background-color: $main-bg-color;
+    
     &__container {
         display: flex;
         align-items:center;
@@ -7,14 +9,24 @@
     
     
     &__button {
+        display: flex;
+        padding: 0;
         border: none;
         background-color: $main-bg-color;
     }
 
-    &__button-icon {
-        background-color: red;
+    &__button-icon-menu {
+        x: 20%;
+        y: 30%;
     }
 
     &__button-icon-close {
+        x: 30%;
+        y: 30%;
+    }
+
+    &__container {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }

@@ -1,0 +1,32 @@
+.hero {
+    &__container {
+        padding: 0;
+    }
+    
+    &__background {
+        min-width: 480px;
+        height: 400px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.8)), url("../images/hero/hero.jpg"), linear-gradient(black);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @extend %center;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-align: center;
+
+        font-weight: 900px;
+        font-size: 26px;
+        line-height: 1.62;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $second-text-color;
+    }
+
+    &__button {
+        margin-top: 30px;
+    }
+}
