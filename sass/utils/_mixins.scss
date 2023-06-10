@@ -12,3 +12,19 @@
     background-color: $focus-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+@mixin backdrop($color: rgba(0, 0, 0, 0.2)) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+}
+
+@mixin quadraticItem($size) {
+    width: $size;
+    height: $size;
+}
+
+;

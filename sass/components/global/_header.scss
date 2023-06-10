@@ -1,18 +1,35 @@
 .header {
+    position: relative;
     background-color: $main-bg-color;
     
     &__container {
         display: flex;
         align-items:center;
-        justify-content:space-between;
+        justify-content: space-between;
     }
     
     
-    &__button {
+    &__button-menu {
         display: flex;
         padding: 0;
+        margin: 0;
         border: none;
         background-color: $main-bg-color;
+
+        @media screen and (min-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__button-menu &__button-icon-close {
+        display: none;
+    }
+    
+    &__button-menu.is-open &__button-icon-menu {
+        display: none;
+    }
+        &__button-menu.is-open &__button-icon-close {
+        display: block;
     }
 
     &__button-icon-menu {
@@ -28,5 +45,93 @@
     &__container {
         padding-top: 16px;
         padding-bottom: 16px;
+    }
+
+    &__wrap {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.166;
+        position: relative;
+        letter-spacing: 0.02em;
+
+        
+
+        @media screen and (max-width: 767px) {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            width: 100%;
+        
+            background-color: $main-bg-color;
+            border-top: 1px solid #ECECEC;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+            &.is-open {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__nav {
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    &__nav-item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__nav-item:last-child {
+        @media screen and (max-width: 767px){
+            margin-bottom: 60px;
+        }
+    }
+    
+
+    &__nav-link {
+        position: relative;
+        color: $main-text-color;
+    }
+
+    &__contacts {
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    &__contacts-item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__contacts-link {
+        color: $third-text-color;
+    }
+
+    &__icon-envelope {
+        margin-right: 10px;
+        width: 16px;
+        height: 11.2px;
+
+        fill: currentColor;
+    }
+
+    &__icon-smartphone {
+        margin-right: 10px;
+        width: 10px;
+        height: 14.94px;
+
+        fill: currentColor;
     }
 }

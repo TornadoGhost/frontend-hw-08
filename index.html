@@ -14,8 +14,19 @@
           <span class="logo__partname">Web</span>
           Studio
         </a>
-        <button class="header__button" type="button">
-          <svg class="header__button-icon" width="40" height="40">
+        <button
+          class="header__button-menu"
+          aria-expanded="false"
+          aria-controlls="menu-container"
+          type="button"
+          data-menu-button
+        >
+          <svg
+            class="header__button-icon"
+            aria-label="Перемикач мобільного меню"
+            width="40"
+            height="40"
+          >
             <use
               class="header__button-icon-menu"
               href="./images/svg/symbol-defs.svg#menu_24px"
@@ -23,19 +34,19 @@
               height="16px"
             ></use>
             <use
-              class="header__button-icon-close is-hidden"
+              class="header__button-icon-close"
               href="./images/svg/symbol-defs.svg#close_24px"
               width="16px"
               height="16px"
             ></use>
           </svg>
         </button>
-        <div class="header__wrap is-hidden">
+        <div class="header__wrap" id="menu-container" data-menu>
           <nav class="header__nav">
             <ul class="header__nav-list">
               <li class="header__nav-item">
                 <a
-                  class="header__nav-link active-tab"
+                  class="header__nav-link is-active"
                   id="home-tab"
                   href="./index.html"
                   >Студія</a
@@ -581,7 +592,7 @@
           </svg>
         </button>
         <form class="backdrop__form" action="#" autocomplete="off">
-          <p class="backdrop__text">Оставте свої дані, ми вам передзвонили</p>
+          <p class="backdrop__text">Залиште свої дані, ми вам передзвонили</p>
           <label class="backdrop__label">
             <input
               class="backdrop__input"
@@ -647,5 +658,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/active-page.js"></script>
+    <script src="./js/button-menu.js"></script>
   </body>
 </html>

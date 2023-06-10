@@ -8,9 +8,9 @@ let contanactsTab = document.getElementById("contacts-tab");
 
 //Check if the current URL matches the URL of each tab, and add the "active" class to the corresponding tab
 if (currentUrl.includes("index.html")) {
-    homeTab.classList.add("active-tab");
+    homeTab.classList.add("is-active");
 } else if (currentUrl.includes("portfolio.html")) {
-    portfolioTab.classList.add("active-tab");
+    portfolioTab.classList.add("is-active");
 } else if (currentUrl.includes("contacts.html")) {
-    contanactsTab.classList.add("active-tab");
+    contanactsTab.classList.add("is-active");
 }
