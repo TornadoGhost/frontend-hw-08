@@ -897,6 +897,7 @@ p {
   }
 }
 .features__text {
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.714;
   color: #757575;
