@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
 
 //components
+    //globals
 @import "./components/global/logo";
 @import "./components/global/container";
 @import "./components/global/is-hidden";
@@ -20,10 +21,12 @@
 @import "./components/global/is-active";
 @import "./components/modals/services";
 @import "./components/global/is-fixed";
-
 @import "./components/global/header";
+    //index
 @import "./components/index/hero";
 @import "./components/index/features";
 @import "./components/index/about";
 @import "./components/index/team";
 @import "./components/index/clients";
+    //portfolio
+@import "./components/portfolio/portfolio";

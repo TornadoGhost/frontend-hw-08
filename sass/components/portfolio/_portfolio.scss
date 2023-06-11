@@ -1,0 +1,107 @@
+.portfolio {
+    background-color: $main-bg-color;
+
+    &__selection-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    &__selection-list-item:last-child {
+        margin-top: 10px;
+    }
+
+    &__button {
+        margin: 0;
+        padding: 6px 22px;
+
+        font-weight: 500;
+        line-height: 1.625;
+        letter-spacing: 0.03em;
+
+        color: $main-text-color;
+        background-color: $second-bg-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &__button--active {
+        color: $second-text-color;
+        background-color: $focus-color;
+    }
+
+    &__projects-list {
+        padding-bottom: 60px;
+    }
+
+    &__projects-list-item {
+        width: 100%;
+    }
+
+    &__projects-list-item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__card-top {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__text-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+        @extend %center;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    &__description {
+        padding-left: 24px;
+        padding-right: 24px;
+        
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.555;
+        color: $second-text-color;
+    }
+
+    &__card-bottom {
+        padding: 20px 24px;
+
+        border-right: 1px solid #EEEEEE;;
+        border-bottom: 1px solid #EEEEEE;;
+        border-left: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        background-color: $main-bg-color;
+    }
+
+    &__card-bottom-title {
+        margin-bottom: 4px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $main-text-color;
+    }
+
+    &__card-bottom-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.875;
+
+        color: $third-text-color;
+    }
+}
