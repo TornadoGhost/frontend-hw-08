@@ -4,6 +4,8 @@
     }
     
     &__background {
+        margin-left: auto;
+        margin-right: auto;
         max-width: 1600px;
         height: 400px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.8)), url("../images/hero/hero.jpg"), linear-gradient(black);
@@ -13,6 +15,10 @@
 
         @extend %center;
         flex-direction: column;
+
+        @media screen and (min-width: 1200px) {
+            height: 600px;
+        }
     }
 
     &__title {
@@ -24,10 +30,25 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $second-text-color;
+
+        @media screen and (min-width: 768px) {
+            width: 360px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.363;
+            width: 696px;
+        }
     }
 
     &__button {
         margin-top: 30px;
         padding: 10px 32px;
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 40px;
+        }
     }
 }

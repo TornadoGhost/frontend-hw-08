@@ -4,11 +4,20 @@
     &__container {
         padding-top: 60px;
         padding-bottom: 60px;
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
     }
 
     &__title {
         margin-bottom: 30px;
         text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__list {
@@ -18,12 +27,38 @@
     }
 
     &__item {
+        @media screen and (max-width: 767px) {
+            width: calc((100% - 30px) / 2);
+        }
+
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 60px) / 3);
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - (30px * 5)) / 6);
+        }
+    }
+
+    &__link {
         @extend %center;
-
-        width: calc((100% - 30px) / 2);
         height: 90px;
-
+        
         border: 1px solid $svg-color;
         border-radius: 4px;
+
+        color: $svg-color;
+
+        transition: color 250ms $cubic-bezier, border-color 250ms $cubic-bezier;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $focus-color;
+        border-color: $focus-color;
+    }
+
+    &__icon {
+        fill: currentColor;
     }
 }

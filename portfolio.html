@@ -51,7 +51,7 @@
               </li>
               <li class="header__nav-item">
                 <a
-                  class="header__nav-link"
+                  class="header__nav-link is-active"
                   id="portfolio-tab"
                   href="./portfolio.html"
                   >Портфоліо</a
@@ -350,20 +350,24 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__wrap">
-          <a class="logo logo--white" href="./index.html">
-            <span class="logo__partname">Web</span>
-            Studio
-          </a>
-          <address class="footer__address">
-            <p class="footer__address-text">м. Київ, пр-т Лесі Українки, 26</p>
-            <a class="footer__address-link" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-            <a class="footer__address-link" href="tel:380991111111"
-              >+38 099 111 11 11</a
-            >
-          </address>
+        <div class="footer__tablet-position">
+          <div class="footer__wrap">
+            <a class="logo logo--white" href="./index.html">
+              <span class="logo__partname">Web</span>
+              Studio
+            </a>
+            <address class="footer__address">
+              <p class="footer__address-text">
+                м. Київ, пр-т Лесі Українки, 26
+              </p>
+              <a class="footer__address-link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+              <a class="footer__address-link" href="tel:380991111111"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
         </div>
         <div class="footer__socials">
           <b class="call">Приєднуйтесь</b>
@@ -415,14 +419,14 @@
           <form class="footer__form" action="#">
             <label class="footer__label">
               <input class="footer__input-email" type="email" />
-              <button class="footer__button-submit button" type="submit">
-                Підписатись
-                <svg class="footer__button-icon">
-                  <use href="./images/svg/symbol-defs.svg#iconsend"></use>
-                </svg>
-              </button>
               <span class="footer__label-name">E-mail</span>
             </label>
+            <button class="footer__button-submit button" type="submit">
+              Підписатись
+              <svg class="footer__button-icon">
+                <use href="./images/svg/symbol-defs.svg#iconsend"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>

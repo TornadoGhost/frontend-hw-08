@@ -4,6 +4,10 @@
     &__container {
         padding-top: 60px;
         padding-bottom: 60px;
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
     }
 
     &__page-title {
@@ -12,8 +16,28 @@
         pointer-events: none;
     }
 
-    &__item:not(:last-child) {
-        margin-bottom: 30px;
+    &__list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+
+    &__item {
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
     &__img-background {
@@ -45,7 +69,8 @@
     }
 
     &__text {
-        margin-top: 10px;   
+        margin-top: 10px;
+        font-weight: 400;
         font-size: 14px;
         line-height: 1.714;
         color: $third-text-color;
