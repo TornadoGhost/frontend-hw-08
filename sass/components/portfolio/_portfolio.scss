@@ -57,6 +57,10 @@
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             width: calc((100% - 30px) / 2);
         }
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 60px) / 3);
+        }
     }
 
     &__projects-list-item:not(:last-child) {

@@ -399,6 +399,13 @@ p {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__tablet-position {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .footer__address {
   margin-bottom: 60px;
   font-style: normal;
@@ -437,6 +444,11 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__socials {
     display: inline-block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__socials {
+    margin-left: 69px;
   }
 }
 .footer__socials-list {
@@ -1359,6 +1371,11 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__projects-list-item {
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__projects-list-item {
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (max-width: 767px) {

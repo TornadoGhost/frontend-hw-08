@@ -22,8 +22,13 @@
         }
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
+            
             justify-content: space-around;
             text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            align-items: center;
         }
     }
 
@@ -64,6 +69,10 @@
     &__socials {
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             display: inline-block;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 69px;
         }
     }
 
