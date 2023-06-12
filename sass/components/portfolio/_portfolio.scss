@@ -71,6 +71,8 @@
 
     &__card-top {
         position: relative;
+
+        overflow: hidden;
     }
 
     &__img {
@@ -87,9 +89,24 @@
         @extend %center;
 
         opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+        transform: translateY(100%);
+
+        transition: opacity 250ms $cubic-bezier, 
+                    transform 250ms $cubic-bezier                  
     }
+
+    &__projects-list-item:hover &__text-background,
+    &__projects-list-item:focus &__text-background {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    &__projects-list-item:hover &__card-bottom,
+    &__projects-list-item:focus &__text-background {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+
 
     &__description {
         padding-left: 24px;
@@ -107,10 +124,10 @@
         border-right: 1px solid #EEEEEE;;
         border-bottom: 1px solid #EEEEEE;;
         border-left: 1px solid #EEEEEE;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
         background-color: $main-bg-color;
 
-        
+        transition: box-shadow 250ms $cubic-bezier;
     }
 
     &__card-bottom-title {
